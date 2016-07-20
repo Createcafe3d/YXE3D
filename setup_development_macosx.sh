@@ -19,7 +19,7 @@ touch venv/lib/python2.7/site-packages/google/__init__.py
 python -m compileall venv/lib/python2.7/site-packages/google/
 
 
-pip install --upgrade -r requirements.txt
+pip install --upgrade --user python -r requirements.txt
 if [ $? != 0 ]; then
     echo -e "${FRED}FAILED TO INSTALL REQUIREMENTS{RS}"
     exit 59
