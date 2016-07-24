@@ -13,13 +13,17 @@ USE_OSX_FRAMEWORKS=0 pip install -U kivy==1.9.1
 echo "--------Setting up pyinstaller----"
 pip install -U pyinstaller==3.1
 
+
+pip install pillow
 echo "--------Applying work around to googles protobuf library----"
 pip install protobuf==2.6.1
 touch venv/lib/python2.7/site-packages/google/__init__.py
 python -m compileall venv/lib/python2.7/site-packages/google/
 
+brew install sdl2 sdl2_image sdl2_ttf sdl2_mixer gstreamer
+pip install pygame
 
-pip install --upgrade -r requirements.txt
+pip install --upgrade --user python -r requirements.txt
 if [ $? != 0 ]; then
     echo -e "${FRED}FAILED TO INSTALL REQUIREMENTS{RS}"
     exit 59
