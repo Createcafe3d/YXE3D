@@ -10,9 +10,9 @@ def setup_logging(args):
     peachy_logger = logging.getLogger('peachy')
     if args.devmode:
         timestr = time.strftime("%Y-%m-%d-%H%M%S")
-        logfile = os.path.join(config.PEACHY_PATH, 'peachyprinter-%s.log' % timestr)
+        logfile = os.path.join(config.PEACHY_PATH, 'YXE3D-%s.log' % timestr)
     else:
-        logfile = os.path.join(config.PEACHY_PATH, 'peachyprinter.log')
+        logfile = os.path.join(config.PEACHY_PATH, 'YXE3D.log')
     print ("Using logfile: {}".format(logfile))
     try:
         if os.path.isfile(logfile):
@@ -70,7 +70,7 @@ if __name__ == "__main__":
     path = os.path.dirname(os.path.realpath(__file__))
     setup_env(path)
 
-    from peachyprinter import config, PrinterAPI
+    from YXE3D import config, PrinterAPI
 
     if not os.path.exists(config.PEACHY_PATH):
         os.makedirs(config.PEACHY_PATH)
@@ -85,5 +85,5 @@ if __name__ == "__main__":
         sys.argv.append("-m")
         sys.argv.append(args.mod)
 
-    from gui import PeachyPrinter
-    PeachyPrinter(api, language=args.lang).run()
+    from gui import YXE3D
+    YXE3D(api, language=args.lang).run()

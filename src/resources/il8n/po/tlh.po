@@ -19,7 +19,7 @@ msgstr ""
 msgid "Load file"
 msgstr "load teywI'"
 
-#: src/gui.py:275 src/gui.py:309 src/peachyprinter.kv:59
+#: src/gui.py:275 src/gui.py:309 src/YXE3D.kv:59
 #: src/ui/custom_widgets.kv:115 src/ui/firmware_ui.kv:134
 #: src/ui/peachy_widgets.kv:161 src/ui/print_ui.kv:122
 msgid "Close"
@@ -29,7 +29,7 @@ msgstr "SoQmoH"
 msgid "An Error has Occured"
 msgstr ""
 
-#: src/gui.py:298 src/peachyprinter.kv:223
+#: src/gui.py:298 src/YXE3D.kv:223
 msgid "Exit"
 msgstr "mej"
 
@@ -37,59 +37,59 @@ msgstr "mej"
 msgid "Some Text"
 msgstr ""
 
-#: src/peachyprinter.kv:14
+#: src/YXE3D.kv:14
 msgid "Settings Selection"
 msgstr "settings Selection"
 
-#: src/peachyprinter.kv:24
+#: src/YXE3D.kv:24
 msgid "Laser Calibration"
 msgstr "'uD Calibration"
 
-#: src/peachyprinter.kv:31
+#: src/YXE3D.kv:31
 msgid "Dripper Calibration"
 msgstr "dripper Calibration"
 
-#: src/peachyprinter.kv:38
+#: src/YXE3D.kv:38
 msgid "Resin Curing Calibration"
 msgstr "resin Calibration vor"
 
-#: src/peachyprinter.kv:45
+#: src/YXE3D.kv:45
 msgid "Advanced Settings"
 msgstr "'Itlh Settings"
 
-#: src/peachyprinter.kv:52
+#: src/YXE3D.kv:52
 msgid "Restore Defaults"
 msgstr "Defaults SabHa'"
 
-#: src/peachyprinter.kv:86
+#: src/YXE3D.kv:86
 msgid "Loading, Ensure your printer is connected"
 msgstr ""
 
-#: src/peachyprinter.kv:89
+#: src/YXE3D.kv:89
 msgid "Close and Exit"
 msgstr ""
 
-#: src/peachyprinter.kv:97
+#: src/YXE3D.kv:97
 msgid "Shutting down"
 msgstr ""
 
-#: src/peachyprinter.kv:119
+#: src/YXE3D.kv:119
 msgid "Print from file"
 msgstr ""
 
-#: src/peachyprinter.kv:126
+#: src/YXE3D.kv:126
 msgid "Print from library"
 msgstr "print vo' be'nI''a'wI', Datu'"
 
-#: src/peachyprinter.kv:133 src/ui/print_ui.kv:111
+#: src/YXE3D.kv:133 src/ui/print_ui.kv:111
 msgid "Settings"
 msgstr "setting"
 
-#: src/peachyprinter.kv:183
+#: src/YXE3D.kv:183
 msgid "Starting Height"
 msgstr "start 'ab"
 
-#: src/peachyprinter.kv:197 src/infrastructure/setting_mapper.py:82
+#: src/YXE3D.kv:197 src/infrastructure/setting_mapper.py:82
 #: src/infrastructure/setting_mapper.py:99
 #: src/infrastructure/setting_mapper.py:116
 #: src/infrastructure/setting_mapper.py:134
@@ -122,11 +122,11 @@ msgstr "start 'ab"
 msgid "Cancel"
 msgstr "qIl"
 
-#: src/peachyprinter.kv:204
+#: src/YXE3D.kv:204
 msgid "Load"
 msgstr "load"
 
-#: src/peachyprinter.kv:212
+#: src/YXE3D.kv:212
 msgid "MARKUP - Disclaimer "
 msgstr ""
 "[b]Laser Safety[/b]\n"
@@ -183,7 +183,7 @@ msgstr ""
 "agree that Peachy Printer Inc. is not liable for injuries or damages from "
 "any of our products."
 
-#: src/peachyprinter.kv:218
+#: src/YXE3D.kv:218
 msgid "Accept"
 msgstr ""
 

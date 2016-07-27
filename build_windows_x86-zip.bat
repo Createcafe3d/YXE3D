@@ -64,15 +64,15 @@ ECHO ------------------------------------
 ECHO Creating Package
 ECHO ------------------------------------
 
-COPY /Y PeachyPrinter-win32-zip.spec.source PeachyPrinter.spec
+COPY /Y YXE3D-win32-zip.spec.source YXE3D.spec
 IF NOT "%ERRORLEVEL%" == "0" (
-  ECHO FAILED executing command: COPY /Y PeachyPrinter-win32-zip.spec.source PeachyPrinter.spec
+  ECHO FAILED executing command: COPY /Y YXE3D-win32-zip.spec.source YXE3D.spec
   EXIT /B 78
 )
 
-pyinstaller --clean --noconfirm PeachyPrinter.spec
+pyinstaller --clean --noconfirm YXE3D.spec
 IF NOT "%ERRORLEVEL%" == "0" (
-  ECHO FAILED executing command: pyinstaller --clean --noconfirm PeachyPrinter.spec
+  ECHO FAILED executing command: pyinstaller --clean --noconfirm YXE3D.spec
   EXIT /B 78
 )
 
@@ -80,7 +80,7 @@ ECHO ------------------------------------
 ECHO Moving file
 ECHO ------------------------------------
 cd dist
-python ..\make_zip.py PeachyPrinter_x86 ..\PeachyPrinter_x86-%VERSION%.zip
+python ..\make_zip.py YXE3D_x86 ..\YXE3D_x86-%VERSION%.zip
 IF NOT "%ERRORLEVEL%" == "0" (
     ECHO "FAILED moving files"
     EXIT /B 798

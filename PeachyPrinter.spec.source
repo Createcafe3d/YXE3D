@@ -4,7 +4,7 @@ from kivy.tools.packaging.pyinstaller_hooks import install_hooks
 install_hooks(globals())
 
 a = Analysis(['src\\main.py'],
-             pathex=['peachyprinter'],
+             pathex=['YXE3D'],
              hiddenimports=[],
              runtime_hooks=None)
 pyz = PYZ(a.pure)
@@ -14,7 +14,7 @@ exe = EXE(pyz,
           a.binaries,
           a.zipfiles,
           a.datas,
-          name='PeachyPrinter.exe',
+          name='YXE3D.exe',
           debug=False,
           strip=None,
           upx=True,
