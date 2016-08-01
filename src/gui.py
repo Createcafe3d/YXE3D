@@ -24,8 +24,8 @@ from ui.cure_test_ui import CureTestUI
 from ui.calibrate_ui import CalibrateUI
 from ui.restore_ui import RestoreUI
 from ui.custom_widgets import *
-from YXE3D import MissingPrinterException
-import YXE3D
+from peachyprinter import MissingPrinterException
+import peachyprinter
 
 
 import os
@@ -86,8 +86,8 @@ class MainUI(Screen):
         except:
             ui_version = "DEV"
         self.ui_version = ui_version
-        self.api_version = YXE3D.version
-        self.lib_version = YXE3D.lib_version
+        self.api_version = peachyprinter.version
+        self.lib_version = peachyprinter.lib_version
 
     def show_disclaimer(self, *args):
         accepted_disclaimer = Config.getdefault('internal', 'disclaimer', False)
@@ -213,7 +213,7 @@ class MyScreenManager(ScreenManager):
         self.current = 'main_ui'
 
 
-class YXE3D(App):
+class PeachyPrinter(App):
     large_button_height = NumericProperty(dp(52))
     button_height = NumericProperty(dp(40))
     label_height = NumericProperty(dp(30))
@@ -243,7 +243,7 @@ class YXE3D(App):
         Window.size = (1000, 700)
         Window.minimum_width = 1000
         Window.minimum_height = 700
-        super(YXE3D, self).__init__(**kwargs)
+        super(PeachyPrinter, self).__init__(**kwargs)
         self.lang = lang
         Config.set("input", "mouse", "mouse,disable_multitouch")
         Config.set("kivy", "exit_on_escape", 0)
@@ -264,12 +264,12 @@ class YXE3D(App):
 
     def open_settings(self):
         self.destroy_settings()
-        super(YXE3D, self).open_settings()
+        super(PeachyPrinter, self).open_settings()
 
     def switch_lang(self, lang):
         Logger.info("Using Language Locale: %s" % self.lang)
         locale_dir = join(dirname(__file__), 'resources', 'il8n', 'locales')
-        locales = gettext.translation('YXE3D', locale_dir, languages=[self.lang])
+        locales = gettext.translation('peachyprinter', locale_dir, languages=[self.lang])
         self.translator = locales.ugettext
         if hasattr(self, 'settings'):
             self.settings.interface.menu.close_button.text = self.translation(_("Close"))

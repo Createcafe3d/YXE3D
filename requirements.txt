@@ -1,2 +1,2 @@
-https://github.com/createcafe3d/YXE-firmware-flash/releases/download/0.0.1.63/YXE3DFirmwareAPI-0.0.1.63.tar.gz
-https://github.com/createcafe3d/YXE3Dtools/releases/download/1.1.1.976/YXE3DtoolsAPI-1.1.1.976.tar.gz
+https://github.com/PeachyPrinter/peachy-firmware-flash/releases/download/0.0.1.63/PeachyPrinterFirmwareAPI-0.0.1.63.tar.gz
+https://github.com/PeachyPrinter/peachyprintertools/releases/download/1.1.1.972/PeachyPrinterToolsAPI-1.1.1.972.tar.gz

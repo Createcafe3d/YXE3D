@@ -79,8 +79,8 @@ echo "------------------------------------"
 echo "Building Package"
 echo "------------------------------------"
 
-cp -R YXE3D-mac.spec.source YXE3D.spec
-pyinstaller -y --clean --windowed YXE3D.spec
+cp -R peachyprinter-mac.spec.source PeachyPrinter.spec
+pyinstaller -y --clean --windowed PeachyPrinter.spec
 if [ $? != 0 ]; then
     echo "FAILURE: Building app"
     exit 232
@@ -91,33 +91,33 @@ echo "------------------------------------"
 echo "Moving Application"
 echo "------------------------------------"
 
-cp -R dist/YXE3D.app YXE3D.app
+cp -R dist/PeachyPrinter.app PeachyPrinter.app
 
 if [ $? != 0 ]; then
     echo "FAILURE: Copying app"
     exit 233
 fi
 
-cp src/resources/peachy.icns YXE3D.app/Contents/Resources/icon-windowed.icns
+cp src/resources/peachy.icns peachyprinter.app/Contents/Resources/icon-windowed.icns
 
 echo "------------------------------------"
 echo "Building dmg"
 echo "------------------------------------"
 
-dmg_name=YXE3D-$VERSION.dmg
-vol_name=YXE3D
+dmg_name=PeachyPrinter-$VERSION.dmg
+vol_name=PeachyPrinter
 background_image=src/resources/images/mac_installer.png
 volicon=src/resources/peachy.icns
 backgound_width=700
 background_height=400
-app=YXE3D.app
+app=PeachyPrinter.app
 app_pos_x=250
 app_pos_y=200
 sym_pos_x=600
 sym_pos_y=200
 icon_size=64
 
-/opt/git/create-dmg/create-dmg --volicon $volicon --volname $vol_name --background $background_image --window-pos 200 120 --window-size $backgound_width $background_height --icon-size $icon_size --icon $app $app_pos_x $app_pos_y --app-drop-link $sym_pos_x $sym_pos_y --hide-extension $app $dmg_name YXE3D.app
+/opt/git/create-dmg/create-dmg --volicon $volicon --volname $vol_name --background $background_image --window-pos 200 120 --window-size $backgound_width $background_height --icon-size $icon_size --icon $app $app_pos_x $app_pos_y --app-drop-link $sym_pos_x $sym_pos_y --hide-extension $app $dmg_name PeachyPrinter.app
 
 
 deactivate

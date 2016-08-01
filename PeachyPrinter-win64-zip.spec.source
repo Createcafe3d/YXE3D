@@ -3,12 +3,12 @@ from kivy.deps import sdl2, glew
 import os
 
 block_cipher = None
-peachy_dependancies = os.path.join(os.environ.get('VIRTUAL_ENV', ''), 'Lib', 'site-packages', 'YXE3D', 'dependancies', 'win', 'amd64')
-firmware_dependancies = os.path.join(os.environ.get('VIRTUAL_ENV', ''), 'Lib', 'site-packages', 'YXE3D', 'dependancies', 'firmware')
+peachy_dependancies = os.path.join(os.environ.get('VIRTUAL_ENV', ''), 'Lib', 'site-packages', 'peachyprinter', 'dependancies', 'win', 'amd64')
+firmware_dependancies = os.path.join(os.environ.get('VIRTUAL_ENV', ''), 'Lib', 'site-packages', 'peachyprinter', 'dependancies', 'firmware')
 flash_dependancies = os.path.join(os.environ.get('VIRTUAL_ENV', ''), 'Lib', 'site-packages', 'firmware', 'dependancies', 'windows')
 
 a = Analysis(['src\\main.py'],
-             pathex=['YXE3D'],
+             pathex=['peachyprinter'],
              binaries=None,
              datas=None,
              hiddenimports=[],
@@ -23,7 +23,7 @@ pyz = PYZ(a.pure, a.zipped_data,
 exe = EXE(pyz,
           a.scripts,
           exclude_binaries=True,
-          name='YXE3D.exe',
+          name='PeachyPrinter.exe',
           debug=False,
           strip=False,
           upx=True,
@@ -41,5 +41,5 @@ coll = COLLECT(exe,
                *[Tree(p) for p in (sdl2.dep_bins + glew.dep_bins)],
                strip=False,
                upx=True,
-               name='YXE3D_amd64'
+               name='PeachyPrinter_amd64'
                )

@@ -5,7 +5,7 @@ The is the front end for peachy printer tools. And is the main entry point into 
 
 ## Windows
 
-Visit YXE3D.com and click the get started link for installation binaries
+Visit peachyprinter.com and click the get started link for installation binaries
 
 ### Supported windows versions
 
@@ -13,7 +13,7 @@ Windows 7+
 
 ## Mac
 
-Visit YXE3D.com and click the get started link for Mac
+Visit peachyprinter.com and click the get started link for Mac
 
 ### Supported windows versions
 
@@ -45,7 +45,7 @@ Ubuntu 14+  (Tested may work on other linux platforms)
 Running _build_windows_amd64-zip.bat_ or _build_windows_x86-zip.bat_ will setup the environment and installed required components.
 
 ### Running
-As YXE3D runs in a python virtual environment you first need to activate it:
+As PeachyPrinter runs in a python virtual environment you first need to activate it:
 _call venv/Scripts/activate.bat_
 Once activated the software can be run with the command:
 _python src/main.py_ 
@@ -63,7 +63,7 @@ _python src/main.py_
 Running _build_mac.sh_ will setup the environment and installed required components.
 
 ### Running
-As YXE3D runs in a python virtual environment you first need to activate it:
+As PeachyPrinter runs in a python virtual environment you first need to activate it:
 _source venv/bin/activate_
 Once activated the software can be run with the command:
 _python src/main.py_ 
@@ -75,7 +75,7 @@ _python src/main.py_
 
 ### Setup environment
 There is a handy script to help you get started:
-1 Checkout the code from github _git clone https://github.com/createcafe3d/YXE3D.git_
+1 Checkout the code from github _git clone https://github.com/PeachyPrinter/peachyprinter.git_
 3 Open a terminal window and go to the directory you just unziped.
 4 Type  **./build_linux.sh -d -i -j** and hit enter to run 
  - The -i flag will install the requirements via apt.

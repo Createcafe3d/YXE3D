@@ -198,13 +198,13 @@ function build_driver_now ()
   pushd .
   cd /tmp
   rm -rf c-usb-module
-  git clone https://github.com/createcafe3d/c-usb-module.git
+  git clone https://github.com/PeachyPrinter/c-usb-module.git
   cd c-usb-module
   git checkout tags/0.0.1.47
   ./build_linux.sh
   popd
   echo pwd
-  cp /tmp/c-usb-module/linux64/libPeachyUSB.so venv/local/lib/python2.7/site-packages/YXE3D/dependancies/linux/amd64/libPeachyUSB.so
+  cp /tmp/c-usb-module/linux64/libPeachyUSB.so venv/local/lib/python2.7/site-packages/peachyprinter/dependancies/linux/amd64/libPeachyUSB.so
   if [ $? != 0 ]; then
       echo -e "${FRED}Building libPeachyUSB FAILED${RS}"
       exit 59
