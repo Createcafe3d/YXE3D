@@ -1,5 +1,8 @@
-# Peachy Printer
+# YXE3D
 The is the front end for peachy printer tools. And is the main entry point into the wonderful world of Peachy 3D printing.
+
+## Trello Board:
+https://trello.com/b/b91bRMSQ/yxe-3d
 
 # Installation
 
