@@ -154,7 +154,7 @@ class LoadingUI(Screen):
 
     def attempt_connection(self, *args):
         try:
-            firmware_required = self._is_firmware_update_required()
+            #firmware_required = self._is_firmware_update_required()
             firmware_required = False
             if firmware_required:
                 Logger.info("Printer Connection Complete")
