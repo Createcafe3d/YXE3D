@@ -78,7 +78,7 @@ _python src/main.py_
 
 ### Setup environment
 There is a handy script to help you get started:
-1 Checkout the code from github _git clone https://github.com/PeachyPrinter/peachyprinter.git_
+1 Checkout the code from github _git clone https://github.com/CreateCafe3D/YXE3D.git_
 3 Open a terminal window and go to the directory you just unziped.
 4 Type  **./build_linux.sh -d -i -j** and hit enter to run 
  - The -i flag will install the requirements via apt.
