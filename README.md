@@ -1,35 +1,18 @@
 # YXE3D
-The is the front end for peachy printer tools. And is the main entry point into the wonderful world of Peachy 3D printing.
+The is the front end for YXE3Dtools (https://github.com/CreateCafe3D/YXE3Dtools). And is the main entry point into the wonderful world of Low Cost SLA 3D printing.
 
-## Trello Board:
+## Trello (~Agile) Board:
 https://trello.com/b/b91bRMSQ/yxe-3d
 
 # Installation
 
-## Windows
+Currently all installation is from source
 
-Visit peachyprinter.com and click the get started link for installation binaries
+### Supported OS versions
 
-### Supported windows versions
-
-Windows 7+ 
-
-## Mac
-
-Visit peachyprinter.com and click the get started link for Mac
-
-### Supported windows versions
-
-Version named after mountians
-
-## Linux
-
-Must be run from source. Please see the section below for running from source.
-
-### Supported Version
-
-Ubuntu 14+  (Tested may work on other linux platforms)
-
+Windows 7+
+So far all tested recent Macs (10.2+)
+Linux Debian (Ubuntu and the like) 14.04 and 16.04 tested
 
 # Running from source
 
@@ -52,7 +35,6 @@ As PeachyPrinter runs in a python virtual environment you first need to activate
 _call venv/Scripts/activate.bat_
 Once activated the software can be run with the command:
 _python src/main.py_ 
-
 
 ## Mac
 ### Dependancies
@@ -92,6 +74,7 @@ There is a handy script to help you get started:
 #Known Issues (Includes API issues)
  - Configuration can have problems if printers are swapped while software is running
  - Virtual machines will not work as the usb driver abstractions cannot keep up
+ - 32 bit linux driver is installed into wrong location. Workaround is renaming the folder from amd64->x86
 
 #Contributors
 Nicolas Rubio - Posisition icon - source: https://www.iconfinder.com/icons/311123/coordinates_gps_locate_location_map_position_icon
