@@ -7,6 +7,7 @@ https://trello.com/b/b91bRMSQ/yxe-3d
 # Installation
 
 Currently all installation is from source
+[Working on compiled binaries to be hosted at yxe3d.com]
 
 ### Supported OS versions
 
@@ -56,6 +57,7 @@ _python src/main.py_
 ## Linux
 ### Dependancies
 - amd64 platform
+- 32bit platrorms in testing with some workarounds
 - darwin like linux (all testing done with ubuntu) _Other operating systems may work as well if dependancies can be met but are not yet supported_
 
 ### Setup environment
@@ -74,9 +76,12 @@ There is a handy script to help you get started:
 #Known Issues (Includes API issues)
  - Configuration can have problems if printers are swapped while software is running
  - Virtual machines will not work as the usb driver abstractions cannot keep up
- - 32 bit linux driver is installed into wrong location. Workaround is renaming the folder from amd64->x86
+ - The 32 bit linux driver is installed into wrong location. Workaround is renaming the folder from amd64->x86 This is found at ./venv/local/lib/python2.7/site-packages/peachyprinter/dependancies/linux
 
 #Contributors
+**James Townley** - Lion share of the entire peachy code base
+**Tony Arkles**   - PCB and firmware design
+**Peachy Team**   - For all the work on the movement system and creating a great framework
 Nicolas Rubio - Posisition icon - source: https://www.iconfinder.com/icons/311123/coordinates_gps_locate_location_map_position_icon
 
 #Contributing

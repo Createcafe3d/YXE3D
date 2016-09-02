@@ -171,6 +171,7 @@ function dependancies ()
   if [ $? == 0 ]; then
     echo "${FGRN}APT detected using APT${RS}"
     echo "You will be prompted to elevate permissions"
+    sudo apt-get update
     sudo apt-get install $DEBIAN_DEP
     sudo pip install -I --upgrade virtualenv
     return
