@@ -32,10 +32,11 @@ Linux Debian (Ubuntu and the like) 14.04 and 16.04 tested
 Running _build_windows_amd64-zip.bat_ or _build_windows_x86-zip.bat_ will setup the environment and installed required components.
 
 ### Running
-As PeachyPrinter runs in a python virtual environment you first need to activate it:
+As the YXE3D runs in a python virtual environment you first need to activate it:
 _call venv/Scripts/activate.bat_
 Once activated the software can be run with the command:
 _python src/main.py_ 
+or _python src/main.py -tl INFO_ for those who like to watch the terminal :)
 
 ## Mac
 ### Dependancies
@@ -49,7 +50,7 @@ _python src/main.py_
 Running _build_mac.sh_ will setup the environment and installed required components.
 
 ### Running
-As PeachyPrinter runs in a python virtual environment you first need to activate it:
+As the YXE3D runs in a python virtual environment you first need to activate it:
 _source venv/bin/activate_
 Once activated the software can be run with the command:
 _python src/main.py_ 
@@ -79,9 +80,17 @@ There is a handy script to help you get started:
  - The 32 bit linux driver is installed into wrong location. Workaround is renaming the folder from amd64->x86 This is found at ./venv/local/lib/python2.7/site-packages/peachyprinter/dependancies/linux
 
 #Contributors
+##Current Team
+**Will Topping** - Little Tweaks
+
+##Previous Peachy Team Contributors
+
 **James Townley** - Lion share of the entire peachy code base
+
 **Tony Arkles**   - PCB and firmware design
-**Peachy Team**   - For all the work on the movement system and creating a great framework
+
+**Rest of the Peachy Team**   - For all the work on the movement system and creating a great framework
+
 Nicolas Rubio - Posisition icon - source: https://www.iconfinder.com/icons/311123/coordinates_gps_locate_location_map_position_icon
 
 #Contributing
