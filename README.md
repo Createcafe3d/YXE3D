@@ -46,6 +46,12 @@ or _python src/main.py -tl INFO_ for those who like to watch the terminal :)
   *Install with pip install virtualenv
 *Other dependancies are installed by the build scripts.
 
+* Needs SDL Library: https://www.libsdl.org/projects/SDL_ttf/
+ * dmg (Intel 10.5+): https://www.libsdl.org/projects/SDL_ttf/release/SDL2_ttf-2.0.14.dmg
+* Needs create-dmg in ./create-dmg
+ * https://github.com/andreyvit/create-dmg
+
+ 
 ### Setup environment
 Running _build_mac.sh_ will setup the environment and installed required components.
 
