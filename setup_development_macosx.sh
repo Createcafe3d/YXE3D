@@ -23,7 +23,7 @@ python -m compileall venv/lib/python2.7/site-packages/google/
 brew install sdl2 sdl2_image sdl2_ttf sdl2_mixer gstreamer
 pip install pygame
 
-pip install --upgrade --user python -r requirements.txt
+pip install --upgrade -r requirements.txt
 if [ $? != 0 ]; then
     echo -e "${FRED}FAILED TO INSTALL REQUIREMENTS{RS}"
     exit 59
